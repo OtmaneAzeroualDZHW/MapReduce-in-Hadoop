@@ -1,4 +1,4 @@
-```java
+```ruby
 class WordCount {
 
 public static void main(String[] args) throws Exception {
@@ -21,3 +21,4 @@ conf.setReducerClass(Reduce.class);
 JobClient.runJob(conf);
 }
 }
+```
