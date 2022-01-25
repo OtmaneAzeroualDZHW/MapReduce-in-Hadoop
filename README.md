@@ -27,3 +27,8 @@ The interface also prescribes the map method. It is called again by the executio
 Code 3 shows the implementation of a suitable reducer. The generic reducer interface, like that of the mapper, is parameterized by four types: input key and value and output key and value. 
 
 The reduce method receives as a first parameter one of the output keys of the intermediate results of all mappers summarized by Hadoop and an iterator over all values for this key (k2, list (v2)). In addition, as with the mapper, an OutputCollector and Reporter are passed on to reduce. The reduce method to WordCount iterates over and adds the ones passed to it. It generates an output pair (k3, v3) with the word and the number of its occurrences in all documents of the input. 
+
+
+More details can be found in this research paper:
+
+Azeroual O, Fabre R. Processing Big Data with Apache Hadoop in the Current Challenging Era of COVID-19. Big Data and Cognitive Computing. 2021; 5(1):12. https://doi.org/10.3390/bdcc5010012 
